@@ -2,9 +2,11 @@
   "name": "playground-express",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": " app.js",
   "scripts": {
     "tsc": "tsc",
+    "dev": "ts-node-dev src/app.ts",
+    "start": "node build/app.js",   
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,7 +15,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
-    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.3"
   },
   "dependencies": {
