@@ -1,9 +1,9 @@
-import { Request, Response, Router } from "express";
+
+import { Router } from "express";
+import ProductsController from "./productServices";
 
 const router = Router();
 
-router.get("/", (_req: Request, res: Response) => {
-  res.send("<h1>Hello Product!</h1>");
-});
+router.get("/", ProductsController.getAll);
 
 export default router;
